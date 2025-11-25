@@ -1,106 +1,63 @@
-# ZTM Quest - A Journey Begins
+# Yengkong-ZTM-Quest
 
-<p align="center">
-  <img src="./public/assets/sprites/game_cover.png"/ alt="ztm quest - a journey begins cover">
-</p>
+A customized and improved version of the ZTM Quest project. This version includes personal modifications, bug fixes, new features, and enhancements—including the brand-new in-game Help Overlay (press **H** in game).
 
-Whether you're an experienced game developer, a Javascript expert, an HTML and CSS pro, or have never worked with any of these, this project is designed for everyone who's interested in creating something new and special. The core languages used in this project are Javascript, HTML, and CSS, enhanced with the magic of kaplay.js (formerly kaboom.js). However, even if you're not familiar with Javascript, you can still contribute by submitting non-code pull requests. We also need game assets like spritesheets, music, or even ideas in the form of a screenplay, which will serve as a guide for developers to create assets that align with the project's vision.
+## 🎮 Overview
 
-Let's see how far we can get and where the game will lead into.
+Yengkong-ZTM-Quest is a JavaScript/Kaplay browser-based RPG built from the ZTM community project. This fork has been refined and personalized with new functionality while keeping the original game's structure.
 
-## Rules
+## ✨ New Features Added
 
-There are some rules regarding contributions (especially during hacktoberfest)
-- No competition who resolves a issues first or who fixes a pull request first. Helping each other is good and important but creating pressure doesn't help
-- Fixing just one typo per pull request is not really considered adding a lot of value. Make sure you add real value by contributing to the game itself with logic, assets or screenplays
-- We know that everyone wants their pull request as fast merged as possible. Remember, this is a open source project and each person who works on it, does so in their freetime. Also the maintainers!
-- If a pull request got reviewed and problems were found, we will reject it first and request changes as long as the pull request is valid. No need to panic here. Just something which is common practice
-- If you add game assets or entire new maps to the game, make sure to keep track of any credits and shout outs which we have to make for third party resources. Altough they might be free to use, it is more than fair to give creative artists credit for their work. Even if it is a self-made asset, add yourself to the [asset_credits](./asset_credits.md) file
+### Help / Controls Overlay
 
+A custom in-game help menu that can be opened or closed using **H**, and dismissed with **ESC**.
 
-## How to get started
+* Displays movement and interaction controls
+* Uses Kaplay UI components
+* Appears on top of gameplay and stays fixed while the camera moves
 
-### Forking & Cloning the repository
+### Future Planned Additions
 
-Forking the repository is as easy as hitting the fork button in this repo.
-After the fork process, you can then
+* Additional map interactions
+* More player feedback and UI elements
+* Custom items or NPC dialogue
 
-```bash
-git clone https://github.com/<your-username>/ZTM-Quest.git
+## 🚀 Tech Stack
+
+* **JavaScript**
+* **Kaplay (Kaboom) Game Engine**
+* **Vite** dev environment
+* **Tiled** for map creation
+
+## 📂 Project Structure
+
+```
+src/
+ ├── scenes/          # Map scenes, initialization, events
+ ├── gameObjects/      # NPCs, chairs, computers, interactables
+ ├── interactions/     # Interaction scripts
+ ├── sounds/           # Map-specific audio
+ ├── utils/            # Game utilities, state, helpers
+ └── init/             # Map initialization
 ```
 
-Or even better if you have set up ssh for your github account with
-```bash
-git clone git@github.com:<your-username>/ZTM-Quest.git
-```
+## 🛠️ Running Locally
 
-After cloning it, you have to set up the upstream to be able to sync your local repository with the current version of this repository by running
-```bash
-cd ZTM-Quest
-git remote add upstream git@github.com:zero-to-mastery/ZTM-Quest.git
-```
-
-So every now and then - or better said each time you start working, you should run
-```bash
-git pull upstream main
-```
-
-In order to get the latest code and avoid merge conflicts in advance.
-
-### Setup the project itself
-
-You should already be in the ZTM-Quest directory. If not just cd into it by running
-```bash
-cd ZTM-Quest
-```
-Make sure you use the entire path where you have cloned it into.
-Inside run
 ```bash
 npm install
-```
-
-This should set everything up and you should be good to go.
-
-
-### Scripts
-You can run the dev server with hot module reloading with
-
-```bash
 npm run dev
 ```
 
-Run code style checks
-```bash
-npm run prettier
-```
+The game will start on a local development server.
 
-Run code style fix
-```bash
-npm run prettier:fix
-```
+## 🔗 Original Project
 
-Run linting
-```bash
-npm run lint
-```
+This version is based on the open-source ZTM Quest community project.
 
-### Additional Information
+## 📜 License
 
-One of the tasks will be to add interactions in the ZTM Quest world. In order to help contributors identify objects in a map, screenshots were made from the [Tiled](https://www.mapeditor.org/) software with available objects with their corresponding names.
-If you want to develop interactions, make sure to check out the [additional-map-info readme](./additional-map-info/Readme.md)
+This project remains under the same license terms as the original ZTM Quest unless otherwise specified.
 
-### How-To Guides
+---
 
-To make things easier (because it can be really confusing how to start contributing), we have added two HOW-TOs to help you out.
-
-[How-To add game objects](./HOWTO_Add-Game-Objects.md)
-
-[How-To add interactions](./HOWTO_Add-Interactions.md)
-
-## Recommendations for creating new assets (not mandatory to contribute)
-
-Here are some tools which I can recommend regarding game asset creation from scratch
-
-- For map creation: [Tiled](https://www.mapeditor.org/)
-- For music creation: [CakeWalk](https://www.bandlab.com/products/cakewalk) even a mobile app is available
-- For art creation: [Gimp](https://www.gimp.org/) 
+Feel free to modify, expand, or customize this README as your version of the project evolves.
